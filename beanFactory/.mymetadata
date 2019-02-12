@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="beanFactory"
+  id="myeclipse.1523583155156"
+  context-root="/beanFactory"
+  j2ee-spec="5.0"
+  archive="beanFactory.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

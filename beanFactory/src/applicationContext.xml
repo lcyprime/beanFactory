@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="stu" class="com.Ioc.Stu">
+		<property name="name" value="李小名"></property>
+		<property name="school" value="兴华小学"></property>
+	</bean>
+
+	<bean id="tea" class="com.Ioc.Tea">
+		<property name="name" value="王冰冰"></property>
+		<property name="s">
+			<ref bean="stu"/>
+		</property>
+	</bean>
+	
+	<bean id="student" class="com.IocExercise.Student">
+		<property name="name" value="李小明"></property>
+		<property name="number" value="200812589312"></property>
+		<property name="major" value="计算机科学与技术"></property>
+		<property name="school" value="新华小学"></property>
+	</bean>
+</beans>
